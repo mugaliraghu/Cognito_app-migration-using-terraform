@@ -98,3 +98,6 @@ To verify that go to aws management console cognito service and search wuth the 
 
 ![Screenshot (125)](https://user-images.githubusercontent.com/120295902/236794709-106c72dc-29f9-4aaf-be58-9b057a8d73e5.png)
 
+To check the Migration data login with the credential that you used when logging in the old userpool, if you looged in successefully then the migration is working successefully, And you can check the log in Migration Trigger Lambda. as shown in below image.
+
+![Screenshot (126)](https://user-images.githubusercontent.com/120295902/236802816-8c63bc11-de15-4146-b97c-8eeaeca0cfc1.png)
