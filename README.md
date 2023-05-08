@@ -89,3 +89,12 @@ and in the CloudWatch logs you can check the App client id, user pool, user auth
 ![Screenshot (103)](https://user-images.githubusercontent.com/120295902/235731255-f7eea894-d373-4ef8-b87e-a023f79de472.png)
 
 
+in the above user pool i have added only two attribute like Email and Password, but now i need to add two more attrubute like Name and phone No but after cretaing Userpool there is no permission to change the attribute, That's why i created a new userpool, that is "UserPool2" with a Lambda Migration Lambda Function.
+
+To create UserPool, u need to enter the UserPool2 folder and do add some changes in Program1.py file that is Userpool id and client id, That you will get from the output of First cognito user pool.
+after navigate to the main file do the terraform commands as you did above.
+
+To verify that go to aws management console cognito service and search wuth the name you given while creating UserPool and in the  app client enter into your client and if you launch the host Ui, you will redirect to url, in that enter SignUp to see the new attributes as shown in image.
+
+![Screenshot (125)](https://user-images.githubusercontent.com/120295902/236794709-106c72dc-29f9-4aaf-be58-9b057a8d73e5.png)
+
