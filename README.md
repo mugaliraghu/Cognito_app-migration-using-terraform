@@ -96,10 +96,10 @@ in the above user pool i have added only two attribute like Email and Password, 
 To create UserPool, u need to enter the UserPool2 folder and do add some changes in Program1.py file that is Userpool id and client id, That you will get from the output of First cognito user pool.
 after navigate to the main file do the terraform commands as you did above.
 
-To verify that go to aws management console cognito service and search wuth the name you given while creating UserPool and in the  app client enter into your client and if you launch the host Ui, you will redirect to url, in that enter SignUp to see the new attributes as shown in image.
+To verify that go to aws management console cognito service and search with the name you given while creating UserPool and in the  app client enter into your client and if you launch the host Ui, you will redirect to url, in that enter SignUp to see the new attributes as shown in image.
 
 ![Screenshot (127)](https://user-images.githubusercontent.com/120295902/236803734-bc561cf4-36f7-41a5-a9ff-916ec8ab47bd.png)
 
-To check the Migration data login with the credential that you used when logging in the old userpool, if you looged in successefully then the migration is working successefully, And you can check the log in Migration Trigger Lambda. as shown in below image.
+To check the Migration data, login with the credential that you used when logging in the old userpool, if you looged in successefully then the migration is working successefully, And you can check the log in Migration Trigger Lambda. as shown in below image.
 
 ![Screenshot (126)](https://user-images.githubusercontent.com/120295902/236802816-8c63bc11-de15-4146-b97c-8eeaeca0cfc1.png)
