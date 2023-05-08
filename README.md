@@ -3,6 +3,8 @@
 ## Objective
 I created an Amazon Cognito user pool and now I want to change the standard attributes required for user registration, But I am unable change standard user pool attributes after a user pool is created. Instead, created a new user pool with the attributes that you want to require for user registration. Then, migrate existing users to the new user pool by using an AWS Lambda function as a user migration trigger.
 
+## Steps
+
 Clone the Project and navigate to the folder "cognito-app" and run the below command.
 ```t
 python -m http.server 
