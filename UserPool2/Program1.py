@@ -6,8 +6,8 @@ client = boto3.client('cognito-idp')
 def lambda_handler(event, context):
     if (event['triggerSource'] == 'UserMigration_Authentication'):
         user = client.admin_initiate_auth(
-            UserPoolId='us-east-1_3eJwUW5JT',
-            ClientId='5arcnnhu9j8ecsn4d8ahfakjo',
+            UserPoolId='<UserPool id of Userpool1>',
+            ClientId='<ClientId of Userpool1>',
             AuthFlow='ADMIN_NO_SRP_AUTH',
             AuthParameters={
                 'USERNAME': event['userName'],
@@ -33,7 +33,7 @@ def lambda_handler(event, context):
             return 'Bad Password'
     elif (event["triggerSource"] == "UserMigration_ForgotPassword"):
         user = client.admin_get_user(
-            UserPoolId='<user pool id of the user pool where the already user exists>',
+            UserPoolId='<UserPool id of Userpool1>',
             Username=event['userName']
         )
         if (user):
