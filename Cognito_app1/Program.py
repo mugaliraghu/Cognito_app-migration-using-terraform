@@ -1,0 +1,14 @@
+from __future__ import print_function
+def lambda_handler(event, context):
+
+    # Send post authentication data to Cloudwatch logs
+    print ("Authentication successful")
+    print ("Trigger function =", event['triggerSource'])
+    print ("User pool = ", event['userPoolId'])
+    print ("App client ID = ", event['callerContext']['clientId'])
+    print ("User ID = ", event['userName'])
+    print ("username =", event['userName'])
+    print ("userAttributes =", event['request']['userAttributes'])
+
+    return event
+ 
